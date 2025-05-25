@@ -38,6 +38,9 @@
   .photo-grid__item {
     width: 100%;
   }
+  .place__frame {
+    max-width: 355px;
+  }
 }
 
 @media screen and (max-width: 544px) {
@@ -105,5 +108,10 @@
     max-width: 288px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .place__frame {
+    max-width: 288px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
