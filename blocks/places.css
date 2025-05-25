@@ -1,0 +1,86 @@
+.places {
+  margin: 92px 148px 0;
+}
+.place {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  grid-template-areas:
+    "place__title place__website"
+    "place__image place__description"
+    "place__frame place__description";
+}
+
+.place__title {
+  margin: 0;
+  grid-area: place__title;
+  max-width: 460px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #ffffff;
+}
+.place__website {
+  grid-area: place__website;
+  margin-top: auto;
+}
+.place__description {
+  grid-area: place__description;
+}
+.place__url-heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.place__image {
+  grid-area: place__image;
+  width: 100%;
+}
+.place__artist {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.place__paragraph {
+  margin: 0 0 25px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #ffffff;
+}
+.place__frame {
+  grid-area: place__frame;
+  box-sizing: border-box;
+  max-width: 356.08px;
+  height: 48px;
+  padding: 13px 20px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.place__frame:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+.place__image:hover {
+  opacity: 0.5;
+}

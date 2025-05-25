@@ -15,7 +15,31 @@
     font-size: 45px;
     line-height: 49px;
   }
+  .photo-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  .place__title {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .place {
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 48px 28px;
+  }
+  .place__paragraph {
+    width: 352px;
+  }
+  .photo-grid__item {
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 544px) {
   .header__logo_image {
     max-width: 100%;
@@ -47,5 +71,39 @@
   }
   .intro__text-1 {
     line-height: 30px;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .place__website {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .places {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    grid-template-areas:
+      "place__title"
+      "place__website"
+      "place__image"
+      "place__description"
+      "place__frame";
+  }
+  .place__paragraph {
+    max-width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
